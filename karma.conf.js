@@ -1,0 +1,6 @@
+/**
+ * @author: @b3kN
+ */
+
+// Look in ./config for karma.conf.js
+module.exports = require('./config/karma.conf.js');
