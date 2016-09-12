@@ -93,3 +93,8 @@ Weeks: {
 	'EndDate': '1/2/2016'
 }
 ```
+
+### Useful links
+[Taiga Kanban Board](https://tree.taiga.io/project/b3kn-inclock-time-manager/kanban)
+
+[Slack Chatroom](https://inclock.slack.com/messages/general/)
