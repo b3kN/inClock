@@ -20,7 +20,7 @@ const AssetsPlugin = require('assets-webpack-plugin');
  */
 const HMR = helpers.hasProcessFlag('hot');
 const METADATA = {
-  title: 'Angular2 Webpack Starter by @gdi2290 from @AngularClass',
+  title: 'inClock - Time Management from @b3kN',
   baseUrl: '/',
   isDevServer: helpers.isWebpackDevServer()
 };
