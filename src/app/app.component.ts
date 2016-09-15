@@ -30,6 +30,8 @@ import { AppState } from './app.service';
       </span>
     </nav>
 
+    <header></header>
+
     <main>
       <router-outlet></router-outlet>
     </main>
