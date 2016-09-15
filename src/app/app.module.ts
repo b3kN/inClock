@@ -14,6 +14,7 @@ import { ROUTES } from './app.routes';
 import { App } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InteralStateType } from './app.service';
+import { Header } from './header';
 import { Home } from './home';
 import { About } from './about';
 import { NoContent } from './no-content';
@@ -38,6 +39,7 @@ type StoreType = {
   declarations: [
     App,
     About,
+    Header,
     Home,
     NoContent
   ],
