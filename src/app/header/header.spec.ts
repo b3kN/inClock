@@ -13,6 +13,7 @@ import { MockBackend } from '@angular/http/testing';
 // Load the implementations that should be tested
 import { AppState } from '../app.service';
 import { Header } from './header.component';
+
 describe('Header', () => {
   // provide our implementations or mocks to the dependency injector
   beforeEach(() => TestBed.configureTestingModule({
@@ -27,6 +28,7 @@ describe('Header', () => {
         deps: [MockBackend, BaseRequestOptions]
       },
       AppState,
+      Title,
       Header
     ]
   }));

@@ -12,7 +12,7 @@ import { AppState } from '../app.service';
   // Every Angular template is first compiled by the browser before Angular runs it's compiler
   templateUrl: './header.template.html'
 })
-export class Home {
+export class Header {
   // Set our default values
   localState = { value: '' };
   // TypeScript public modifiers
