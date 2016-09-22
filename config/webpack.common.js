@@ -58,9 +58,9 @@ module.exports = function(options) {
      */
     entry: {
 
-      'polyfills': './src/polyfills.browser.ts',
-      'vendor':    './src/vendor.browser.ts',
-      'main':      './src/main.browser.ts'
+      'polyfills': './src/client/polyfills.browser.ts',
+      'vendor':    './src/client/vendor.browser.ts',
+      'main':      './src/client/main.browser.ts'
 
     },
 
@@ -79,7 +79,7 @@ module.exports = function(options) {
       extensions: ['', '.ts', '.js', '.json'],
 
       // Make sure root is src
-      root: helpers.root('src'),
+      root: helpers.root('src/client'),
 
       // remove other default values
       modulesDirectories: ['node_modules'],
@@ -107,7 +107,7 @@ module.exports = function(options) {
             replace: '$1.import($3).then(mod => (mod.__esModule && mod.default) ? mod.default : mod)',
             flags: 'g'
           },
-          include: [helpers.root('src')]
+          include: [helpers.root('src/client')]
         },
 
       ],
@@ -167,7 +167,7 @@ module.exports = function(options) {
         {
           test: /\.html$/,
           loader: 'raw-loader',
-          exclude: [helpers.root('src/index.html')]
+          exclude: [helpers.root('src/client/index.html')]
         },
 
         /* File loader for supporting images, for example, in CSS files.
@@ -231,7 +231,7 @@ module.exports = function(options) {
        * See: https://www.npmjs.com/package/copy-webpack-plugin
        */
       new CopyWebpackPlugin([{
-        from: 'src/assets',
+        from: 'src/client/assets',
         to: 'assets'
       }]),
 
@@ -244,7 +244,7 @@ module.exports = function(options) {
        * See: https://github.com/ampedandwired/html-webpack-plugin
        */
       new HtmlWebpackPlugin({
-        template: 'src/index.html',
+        template: 'src/client/index.html',
         chunksSortMode: 'dependency'
       }),
 
